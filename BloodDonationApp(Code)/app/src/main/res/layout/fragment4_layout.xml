@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="top"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".CreateProfile">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/alegreya_sc_bold"
+            android:gravity="center_horizontal"
+            android:text="Your Profile"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="36sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="30dp"
+            app:cardCornerRadius="75dp"
+            app:cardPreventCornerOverlap="false">
+
+            <ImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_baseline_person_24"
+                android:clickable="true"
+                android:scaleType="fitCenter" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:drawablePadding="7dp"
+            android:hint="Name"
+            android:paddingLeft="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="7dp"
+            android:hint="Email"
+            android:paddingLeft="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/phone_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:drawableLeft="@drawable/ic_baseline_call_24"
+            android:drawablePadding="7dp"
+            android:hint="Phone"
+            android:paddingLeft="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:drawableLeft="@drawable/ic_baseline_location_city_24"
+            android:drawablePadding="7dp"
+            android:hint="City"
+            android:paddingLeft="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/blood_grp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:drawableLeft="@drawable/ic_baseline_invert_colors_24"
+            android:drawablePadding="7dp"
+            android:hint="Blood Group"
+            android:paddingLeft="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+
+        <Button
+            android:id="@+id/delete_receiver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Delete My Receiver Request" />
+
+        <Button
+            android:id="@+id/delete_donor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Delete My Donor Request" />
+
+
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:text="Logout" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
